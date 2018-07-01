@@ -4,7 +4,7 @@ Then I download the file with `download.file()`, and unzip them with `unzip()`.
 
 Then I load datasets of the 561-feature of train and test data, the datasets contain features (descriptive) and labels (descriptive) with `read.table()`.  
 Then I combine train and test data to get a complete dataset with `rbind()`, and store it in a new variable `df`.  
-Then I label the data set with descriptive variable names by using the descriptive information contained in `features.txt`.  
+Then I label the data set with descriptive variable names by using the descriptive information contained in `features.txt`. The variable names are descriptive because they're created by the researchers and are meant to be descriptive. See [CodeBook.md](https://github.com/daiyang94815/datasciencecoursera/blob/master/CodeBook.md) for detailed explaination of each variable.  
 Finishing last step, I can extract only the measurements on the mean and standard deviation for each measurement using `grepl()` by matching `mean()` and `std()`. I store the dataset in a new variable `df2`.
 
 Then I read datasets that contain the information of activity types for both train and test data. Then I combine these two datasets.  

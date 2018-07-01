@@ -1,4 +1,10 @@
 # Getting and Cleaning Data Course Project
+## For my marker
+You can use the following 3 lines of codes to read my "tidydata.txt".
+address <- "https://s3.amazonaws.com/coursera-uploads/peer-review/0182f4b0f236ba11036563271547d1a4/tidydata.txt"  
+address <- sub("^https", "http", address)  
+data <- read.table(url(address), header = TRUE)
+
 First, I set working directory to where I want it using `setwd()`.
 Then I download the file with `download.file()`, and unzip them with `unzip()`.
 

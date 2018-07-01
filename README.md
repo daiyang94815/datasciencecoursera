@@ -8,7 +8,7 @@ Then I label the data set with descriptive variable names by using the descripti
 Finishing last step, I can extract only the measurements on the mean and standard deviation for each measurement using `grepl()` by matching `mean()` and `std()`. I store the dataset in a new variable `df2`.
 
 Then I read datasets that contain the information of activity types for both train and test data. Then I combine these two datasets.  
-Then I merge the activity type with its descriptive activity names and keep only the descriptive activity names.  
+Then I merge the activity type with its descriptive activity names and keep only the descriptive activity names (values).  
 Then I paste the descriptive activity name information to the dataset using `cbind()`, and store it in a new variable `df3`, and rename the added column to "acitivityType".
 
 Then I read datasets that contain the information of subjects, and similarly, combine train and test data.  

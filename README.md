@@ -12,7 +12,7 @@ Then I merge the activity type with its descriptive activity names and keep only
 Then I paste the descriptive activity name information to the dataset using `cbind()`, and store it in a new variable `df3`, and rename the added column to "acitivityType".
 
 Then I read datasets that contain the information of subjects, and similarly, combine train and test data.  
-Then I paste the subject information to the dataset, and store it in a new variable `df4`, and rename this subject column to 'subject'
+Then I paste the subject information to the dataset, and store it in a new variable `df4`, and rename this subject column to "subject".
 
 Finally, I create a tidy data set with the average of each variable for each activity and each subject using `group_by()` and `summarise()` from `{tidyverse}`, and store it in a new variable `dfTidy`, and rename the new aggregated variables with "mean_" in front of orginal names to explictly indicate the values are aggreated values.  
 Then I output the `dfTidy` to `tidydata.csv` using `write.csv()`.

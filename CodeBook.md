@@ -50,6 +50,12 @@ std(): Standard deviation
 
 For example: 
 * mean_tBodyAcc-mean()-X
+ * "mean_" indicates it's aggregated value (mean)
+ * "t" indicates it's a time domain signal (or "f" indicates a frequency domain signal)
+ * "Body" indicates it measures body (acceleration) (or "Gravity" indicates it measures gravity (acceleration))
+ * "Acc" indicates the signal is from accelerometer (or "Gyro" indicates the signal is from gyroscope)
+ * "mean()" indicates mean value (or "std()" indicates standard deviation)
+ * "X" indicates the signal is from X direction
 
 
 

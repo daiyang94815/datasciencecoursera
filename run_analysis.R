@@ -53,5 +53,5 @@ dfTidy<-df4%>%group_by(activityType,subject)%>%summarise_all(mean)
 names(dfTidy)[3:68]<-sapply(names(dfTidy)[3:68], function(x)paste('mean_',x,sep=''))
 
 # output the dataset
-write.csv(dfTidy,'tidydata.csv',row.names = F)
+write.table(dfTidy,'tidydata.txt',row.names = F)
 

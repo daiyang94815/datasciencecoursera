@@ -15,4 +15,4 @@ Then I read datasets that contain the information of subjects, and similarly, co
 Then I paste the subject information to the dataset, and store it in a new variable `df4`, and rename this subject column to "subject".
 
 Finally, I create a tidy data set with the average of each variable for each activity and each subject using `group_by()` and `summarise()` from `{tidyverse}`, and store it in a new variable `dfTidy`, and rename the new aggregated variables with "mean_" in front of orginal names to explictly indicate the values are aggreated values.  
-Then I output the `dfTidy` to `tidydata.csv` using `write.csv()`.
+Then I output the `dfTidy` to `tidydata.csv` using `write.table()`.
